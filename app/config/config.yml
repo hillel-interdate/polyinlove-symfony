@@ -15,7 +15,7 @@ parameters:
   do_not_reply: 'do_not_reply@PolyinLove.com'
   instagram_link: 'https://www.instagram.com/polyamorylove7/'
   site_name: 'PolyinLove'
-  google_play: ''
+  google_play: 'https://play.google.com/store/apps/details?id=com.interdate.polyamory'
   company_email: 'contact@interdate-ltd.co.il'
   company_site: 'www.interdate-ltd.co.il'
   telepay_terminal: 'interdate1_ben'

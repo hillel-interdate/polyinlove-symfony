@@ -103,9 +103,10 @@
                     <p>{{ slide.content|raw }}</p>
                     <div class="joinbtn"><a href="{{ path('sign_up') }}">{% trans %} Join Now Free {% endtrans %}</a>
                     </div>
-{#                    <div class="btmbtn">#}{# <a href="https://itunes.apple.com/il/app/greendate-%D7%92%D7%A8%D7%99%D7%A0%D7%93%D7%99%D7%99%D7%98/id1282964919?mt=8" target="_blank" class="apple-icon">&nbsp;</a> #}
-{#                        <a href="{{ google_play }}" target="_blank"#}
-{#                           class="andriod-icon"></a></div>#}
+                    {#                    <div class="btmbtn"> #}{# <a href="https://itunes.apple.com/il/app/greendate-%D7%92%D7%A8%D7%99%D7%A0%D7%93%D7%99%D7%99%D7%98/id1282964919?mt=8" target="_blank" class="apple-icon">&nbsp;</a> #}
+                    <div class=" btmbtn">
+                        <a href="{{ google_play }}" target="_blank"
+                           class="andriod-icon"></a></div>
                 </div>
             </div>
             <input type="hidden" value="{{ slide.imageName }}" class="imageName">
@@ -302,19 +303,19 @@
     </div>
     <!-- howjoin -->
 
-{#    <div class="connect">#}
-{#        <div class="wrap clearfix">#}
-{#            <div class="heading"><{{ homePageBlocks[5].headerType }}#}
-{#                >{{ homePageBlocks[5].name }}</{{ homePageBlocks[5].headerType }}>#}
-{#        </div>#}
-{#        <div class="connect-background"></div>#}
-{#        <div class="applinks">#}
-{#            <a href="{{ google_play }}" class="android"#}
-{#               target="_blank">#}
-{#                <div class="background-links"></div>#}
-{#            </a>#}
-{#        </div>#}
-{#    </div>#}
+        <div class="connect">
+            <div class="wrap clearfix">
+                <div class="heading"><{{ homePageBlocks[5].headerType }}
+                    >{{ homePageBlocks[5].name }}</{{ homePageBlocks[5].headerType }}>
+            </div>
+            <div class="connect-background"></div>
+            <div class="applinks">
+                <a href="{{ google_play }}" class="android"
+                   target="_blank">
+                    <div class="background-links"></div>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- connect end -->
 

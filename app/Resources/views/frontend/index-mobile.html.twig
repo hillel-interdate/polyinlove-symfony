@@ -148,19 +148,19 @@
                             </li>
                         </a>
                     </ul>
-                    {#                    TODO add when relevant #}
-{#                    <div class="applinks">#}
-{#                        {% if isAndroid %}#}
-{#                            <a href="https://play.google.com/store/apps/details?id=il.co.polydate" class="android"#}
-{#                               target="_blank">#}
-{#                                <img src="/images/button_latest.png" alt="">#}
-{#                            </a>#}
-{#                        {% else %}#}
-{#                            <a href="https://apps.apple.com/il/app/polydate/id1577768073" class="ios" target="_blank">#}
-{#                                <div class="background-links"></div>#}
-{#                            </a>#}
-{#                        {% endif %}#}
-{#                    </div>#}
+                    <div class="applinks">
+                        {% if isAndroid %}
+                            <a href={{ google_play }} class="android"
+                               target="_blank">
+                                <img src="/images/button_latest.png" alt="">
+                            </a>
+                            {#                    TODO add when relevant #}
+                            {#                        {% else %} #}
+                            {#                            <a href="https://apps.apple.com/il/app/polydate/id1577768073" class="ios" target="_blank"> #}
+                            {#                                <div class="background-links"></div> #}
+                            {#                            </a> #}
+                        {% endif %}
+                    </div>
 
                 </div>
 
@@ -450,7 +450,8 @@
                                                          alt="{{ site_name }} | polyamory"></a>
                 </div>
                 <div class="facebook-row">
-                    <img src="/images/footer-facebook.png" alt="{{ site_name }} | polyamory" onclick="checkLoginState()">
+                    <img src="/images/footer-facebook.png" alt="{{ site_name }} | polyamory"
+                         onclick="checkLoginState()">
                     <a href="{{ path('sign_up') }}">
                         <button class="footer-free-signup"> {% trans %} Free sign up {% endtrans %}</button>
                     </a>
