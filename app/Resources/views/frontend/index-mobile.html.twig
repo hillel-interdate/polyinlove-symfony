@@ -30,19 +30,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
-    <meta name="description"
-          content="פולידייט - אתר ההכרויות הראשון לקהילה הפוליאמורית בישראל. פוליאמוריה היא הדרך שלכם? מונוגמיה לא מתאימה לכם? בואו להכיר בפולידייט!">
+{#    <meta name="description"#}
+{#          content="פולידייט - אתר ההכרויות הראשון לקהילה הפוליאמורית בישראל. פוליאמוריה היא הדרך שלכם? מונוגמיה לא מתאימה לכם? בואו להכיר בפולידייט!">#}
     <meta property="og:image" content="{{ asset('favicon.ico') }}"/>
     <meta name="google-site-verification" content="R7mMy8ZlnFQ5_D4xkD_wwkHMfLH66TNqM-LKycMy6GQ"/>
     {# <meta property="og:url"           content="https://www.your-domain.com/your-page.html" /> #}
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="PolyDate"/>
-    <meta property="og:description"
-          content="פולידייט - אתר ההכרויות הראשון לקהילה הפוליאמורית בישראל. פוליאמוריה היא הדרך שלכם? מונוגמיה לא מתאימה לכם? בואו להכיר בפולידייט!"/>
-    <meta name="keywords"
-          content="polydate,פוליאמוריה הכרויות,פולידייט,זוגיות פוליאמורית,אתר נישואים פתוחים,פוליאמוריה יחסים פתוחים,מונוגמיה נישואים,פתוחים נישוא">
-
-    <title>פולידייט - אתר הכרויות לקהילה הפוליאמורית</title>
+    {% block title %}{{ seo.title }}{% endblock %}
+    {% block meta_description %}{{ seo.description }}{% endblock %}
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     <meta name="apple-mobile-web-app-title" content="PolyDate">
